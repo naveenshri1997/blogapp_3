@@ -24,7 +24,7 @@ const EditAuthor = () => {
     }, [])
 
     const getoneauthor = async () => {
-        const res = await fetch(`http://localhost:5000/showoneauthor/${id}`);
+        const res = await fetch(`https://blogv2server.onrender.com/showoneauthor/${id}`);
         const data = await res.json();
         console.log('dta', data);
         setname(data.data.name);
@@ -36,7 +36,7 @@ const EditAuthor = () => {
         formData.append('name', name);
         formData.append('author_image', author_image);
 
-        const res = await fetch(`http://localhost:5000/updateauthor/${id}`, {           
+        const res = await fetch(`https://blogv2server.onrender.com/updateauthor/${id}`, {           
             method: "PUT",
             body: formData
         });
@@ -79,7 +79,7 @@ const EditAuthor = () => {
                                             <label className="col-sm-3 col-form-label">Upload Files</label>
                                             <div className="col-sm-9">
                                                 <input type="file" defaultValue={author_image} className="form-control" onChange={(e) => setauthor_image(e.target.files[0])} />
-                                                <iframe src={`http://localhost:5000/${author_image?.slice(14)}`} width="100%" height="150px" />        
+                                                <iframe src={`https://blogv2server.onrender.com/${author_image?.slice(14)}`} width="100%" height="150px" />        
                                             </div>
                                         </div>
                                         <div className="mb-3 row">
