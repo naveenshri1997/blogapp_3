@@ -133,7 +133,7 @@ body {
 
 .blog_container .blog_detail .bdp2{
   display: inline-flex;
-  width: 300px;
+  /* width: 300px; */
   height: 100px;
   margin: 6px 20px 0px 0px;
 
@@ -385,7 +385,7 @@ body {
   display: none;
 }
 .blog_container .blog_detail .bdp1 {
-  margin-right: 15px;
+  margin-right: 0px;
 }
 .blog_container .blog_detail .bdp1 .blog_title {
   font-weight: 700;
@@ -394,7 +394,7 @@ body {
 
 .blog_container .blog_detail .bdp2 {
   display: inline-flex;
-  width: 150px;
+  /* width: 150px; */
   height: 65px;
   margin: 0px 0px 0px 0px;
 
