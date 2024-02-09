@@ -10,13 +10,13 @@ const BlogTitleContainer = ({blogs}) => {
         <Link className='cus_link' to={`/blog/${blogs._id}`}>
             <div className='blog_container'>
                 <div className='author'>
-                    <div className="author_img"><img src={`${url}/${blogs.author[0].author_image.slice(14)}`} alt="bai" className='img-fluid' /></div>
+                    <div className="author_img"><img src={`${url}/${blogs.author[0].author_image?.slice(14)}`} alt="bai" className='img-fluid' /></div>
                     <div className="author_title hev">{blogs.author[0].name}</div>
                     <div className="author_date hev">{`${blogs.author[0].time?blogs.author[0].time.slice(0,10):''}`}</div>
                 </div>
                 <div className='blog_detail'>
                 <div className="bdp2">
-                        <img src={`${url}/${blogs.image.slice(14)}`} className='img-fluid' alt="" />
+                        <img src={`${url}/${blogs.image?.slice(14)}`} className='img-fluid' alt="" />
                     </div>
                     <div className='bdp1'>
                         <h2 className='blog_title text-start'>{blogs.post_title}</h2>
