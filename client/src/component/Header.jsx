@@ -14,23 +14,34 @@ const Header = () => {
           navigate('/')
       }
   }
+  const logosty ={
+    marginTop: "-15px",
+  };
+  const button_style={
+    borderLeft:"none",
+    borderRadius:"0px 3px 3px 0px",
+    border:'1px solid #dee2e6'
+  }
+  const inputstyle={
+    // borderRight:"none",
+  }
   return (
     <>
     <nav class="cus-navbar navbar navbar-expand-lg navbar-light">
   <div class="container-fluid justify-content-start">
-    <Link to='/' class="navbar-brand" href="#"><img width="30px" src={logo} /></Link>
+    <Link style={logosty} to='/' class="navbar-brand" href="#"><img width="30px" src={logo} /></Link>
     
     <div>      
-      <form class="d-flex" onSubmit={searchHandler}>
+      <form  class="d-flex" onSubmit={searchHandler}>
         {/* <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"
         name="text" value={text} onChange={updateFilterValue}/>        */}
 
       <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Search" 
+        <input style={inputstyle} type="text" class="form-control" placeholder="Search" 
         name="text" value={text} onChange={updateFilterValue}
         />
         <div class="input-group-append">
-        <button class="btn btn-outline-secondary" type="submit">Button</button>
+        <button style={button_style} class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
       </div>
   </div>
       </form>
