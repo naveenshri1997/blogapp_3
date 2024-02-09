@@ -39,7 +39,7 @@ const searchReducer = (state, action) => {
             
             if (text) {
                 tempFilterPost = all_posts.filter((curElm) => {
-                    return curElm.post_para.toLowerCase().includes(text.toLowerCase();
+                    return curElm.post_para.toLowerCase().includes(text.toLowerCase());
                 })
                 console.log('tempFilterPost text reducer', tempFilterPost)
             }
