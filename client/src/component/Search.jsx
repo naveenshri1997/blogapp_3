@@ -27,7 +27,7 @@ const getUniqueData =(data,property) =>{
     let newVal = data.map((curElem)=>{
         return curElem[property];
     })
-    return (newVal = ['All',);
+    return (newVal = ['All',]);
     console.log(newVal);
   }
 const categoryonlydata = getUniqueData(filter_posts,"category");
