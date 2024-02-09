@@ -13,7 +13,7 @@ const BlogTitleContainer = ({blogs}) => {
         <Link className='cus_link' to={`/blog/${blogs._id}`}>
             <div className='blog_container'>
                 <div className='author'>
-                    <div className="author_img"><img src={`${url}/${blogs.author[0].author_image?.slice(14)}`} alt="bai" className='img-fluid' /></div>
+                    <div className="author_img"><img src={`${url}/${blogs.author[0].author_image.slice(14)}`} alt="bai" className='img-fluid' /></div>
                     <div className="author_title hev">{blogs.author[0].name}</div>
                     <div className="author_date hev">{`${blogs.author[0].time?blogs.author[0].time.slice(0,10):''}`}</div>
                 </div>
