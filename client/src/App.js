@@ -28,8 +28,11 @@ function App() {
       <Route path='/search/:text' element={<Search/>}></Route>
       <Route path='/adminlogin' element={<Adminlogin/>}></Route>
       {/* admin */}
-      <Route path='/'element={<Privateroute/>}>
-      <Route path='/dashboard' element={<Dashboard/>}></Route>      
+      // <Route path='/'element={<Privateroute/>}>
+      <Route path='/dashboard' element={
+        <Privateroute>
+          <Dashboard/>
+        </Privateroute>}></Route>      
       <Route path='addpost' element={<AddPost/>}></Route>
       <Route path='showpost' element={<ShowPost/>}></Route>      
       <Route path='editpost/:id' element={<EditPost/>}></Route>      
@@ -37,7 +40,7 @@ function App() {
       <Route path='addauthor' element={<AddAuthor/>}></Route>      
       <Route path='showauthor' element={<ShowAuthor/>}></Route>      
       <Route path='editauthor/:id' element={<EditAudthor/>}></Route>      
-      </Route>
+      // </Route>
 
     </Routes>      
     </>
