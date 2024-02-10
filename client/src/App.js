@@ -28,7 +28,7 @@ function App() {
       <Route path='/search/:text' element={<Search/>}></Route>
       <Route path='/adminlogin' element={<Adminlogin/>}></Route>
       {/* admin */}
-      <Route path='/adminlogin'element={<Privateroute/>}>
+      <Route path='/'element={<Privateroute/>}>
       <Route path='/dashboard' element={
         // <Privateroute>
           <Dashboard/>
