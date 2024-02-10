@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link,NavLink,useNavigate } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import logo from '../bloglogo.png';
 import { useSearchContext } from '../context/searchcontext';
 const Header = () => {
@@ -46,7 +46,7 @@ const Header = () => {
   </div>
       </form>
 
-      <NavLink className="nav-link" to="adminlogin">Admin Login</NavLink>
+{/*       <NavLink className="nav-link" to="adminlogin">Admin Login</NavLink> */}
     </div>
   </div>
 </nav>
