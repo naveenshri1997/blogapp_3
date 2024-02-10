@@ -32,7 +32,7 @@ router.post('/login', async(req,res)=>{
         if(!password == userLogin.password){
             res.status(400).json({'msg':'invalid password'});
         }else{
-            res.json({'msg':'user login successfuly'});
+             res.json({ message: "user login successfully" });
         }
 
     } catch (error) {
