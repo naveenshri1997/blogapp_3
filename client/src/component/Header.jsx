@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link,NavLink,useNavigate } from 'react-router-dom';
 import logo from '../bloglogo.png';
 import { useSearchContext } from '../context/searchcontext';
 const Header = () => {
