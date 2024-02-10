@@ -46,7 +46,7 @@ const Header = () => {
   </div>
       </form>
 
-      
+      <NavLink className="nav-link" to="adminlogin">Admin Login</NavLink>
     </div>
   </div>
 </nav>
