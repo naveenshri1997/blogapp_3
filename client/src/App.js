@@ -26,7 +26,8 @@ function App() {
       <Route path='/blog' element={<ScrollCategory/>}></Route>
       <Route path='/blog/:id' element={<SingleBlog/>}></Route>
       <Route path='/search/:text' element={<Search/>}></Route>
-      <Route path='/adminlogin' element={<Adminlogin/>}></Route>
+        // <Route path="/login" element={localStorage.getItem('auth_token') ? <Navigate to="/" /> : <Login />}  />
+      <Route path='/adminlogin' element={localStorage.getItem('auth_token') ? <Navigate to="/" /> : <Adminlogin/>}></Route>
       {/* admin */}
       <Route path='/'element={<Privateroute/>}>
       <Route path='/dashboard' element={
