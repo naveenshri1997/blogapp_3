@@ -14,8 +14,8 @@ const Adminlogin = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                withCredentials: true,
-            }, 
+                
+            }, withCredentials: true,
             body: JSON.stringify({
                 username,
                 password
