@@ -1,9 +1,8 @@
-import React,{Suspense} from 'react'
-// import ScrollCategory from './ScrollCategory'
+import React from 'react'
+import ScrollCategory from './ScrollCategory'
 import { SearchByTopic } from './SearchByTopic'
 import RelatedBlog from './RelatedBlog'
 import { useFilterContext } from '../context/filtercontext';
-const ScrollCategory = React.lazy(()=>  import("./ScrollCategory"));
 
 const Divider = () => {
     
@@ -32,11 +31,10 @@ console.log('categoryonlydata divider page',categoryonlydata);
                 <div className="container-lg">
                     <div className="row">
                         <div className="col-lg-8 border_right allsidepadd">
-                             <Suspense fallback={<div>Loading</div>}>
+                        
                             <ScrollCategory 
                             filter_posts={filter_posts}
                             categoryonlydata={categoryonlydata} /> 
-                        </Suspense> 
                         </div>
                         <div className="col-lg-4 allsidepadd2">
                             <SearchByTopic/>    
