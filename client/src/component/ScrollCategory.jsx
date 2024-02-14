@@ -1,8 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react'
-import BlogTitleContainer from './BlogTitleContainer'
+import React, { useEffect, useRef, useState,Suspense } from 'react'
+// import BlogTitleContainer from './BlogTitleContainer'
 import { useFilterContext } from '../context/filtercontext';
 const ScrollCategory = ({filter_posts,categoryonlydata}) => {
 const {filters:{category},updateFilterValue} = useFilterContext();
+
+const BlogTitleContainer = React.lazy(()=>  import("./BlogTitleContainer"));
+
   console.log("filter_posts scroll",filter_posts);
 console.log(categoryonlydata);
   console.log(filter_posts);
@@ -42,7 +45,10 @@ console.log(categoryonlydata);
             filter_posts.map((blogs) => {
               return (
                 <>
-                    <BlogTitleContainer blogs={blogs} />
+                 <Suspense fallback={<div><h1>oading</h1></div>}>
+                 <BlogTitleContainer blogs={blogs} />
+                        </Suspense>   
+                    
                 </>
               )
             })}
