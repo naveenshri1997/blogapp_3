@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Suspense} from 'react'
 // import ScrollCategory from './ScrollCategory'
 import { SearchByTopic } from './SearchByTopic'
 import RelatedBlog from './RelatedBlog'
