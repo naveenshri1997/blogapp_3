@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{Suspense} from 'react'
 import Header from './Header'
 // import Divider from './Divider'
 const Divider = React.lazy(()=>  import("./Divider"));
