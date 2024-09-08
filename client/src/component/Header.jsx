@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link,useNavigate,Navlink } from 'react-router-dom';
+import { Link,useNavigate,NavLink  } from 'react-router-dom';
 import logo from '../bloglogo.png';
 import { useSearchContext } from '../context/searchcontext';
 const Header = () => {
@@ -47,6 +47,7 @@ const Header = () => {
       </form>
 
       <NavLink className="nav-link" to="adminlogin">Admin Login</NavLink>
+       
     </div>
   </div>
 </nav>
